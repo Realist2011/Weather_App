@@ -1,0 +1,17 @@
+body{
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: blue;
+}
+
+.main{
+    margin:auto;
+    height:700px;
+}
+
+.info{
+    background-color: blanchedalmond;
+
+    background-color: blue;
+}

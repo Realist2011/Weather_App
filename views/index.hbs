@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/first.css">
+
+    
+</head>
+
+<body>
+
+    <div class = "main">
+
+    
+    <ul class="info">
+       <!-- {{#each data as |t|}}
+        {{#each t as |j|}}
+        
+        <li class="item">{{j}}</li>
+        {{/each}}
+        {{/each}}-->
+       <li class="item">Name of the City:  {{data.location.name}}</li>
+       <li class="item">Region:  {{data.location.region}}</li>
+       <li class="item">Country:  {{data.location.country}}</li>
+       <li class="item">Latitude:  {{data.location.lat}}</li>
+       <li class="item">Longtitude:  {{data.location.lon}}</li>
+       <li class="item">Time-Zone ID:  {{data.location.tz_id}}</li>
+       <li class="item">Localtime Epoch:  {{data.location.localtime_epoch}}</li>
+       <li class="item">Localtime:  {{data.location.localtime}}</li>
+       
+    </ul>
+
+    <ul class="current">
+        <li class="item">Last Updated Epoch: {{data.current.last_updated_epoch}}</li>
+        <li class="item">Last Updatation Time:  {{data.current.last_updated}}</li>
+        <li class="item">Temperature in Celsius: {{data.current.temp_c}}</li>
+        <li class="item">Temperature in Farheneit  {{data.current.temp_f}}</li>
+        <li class="item">Is Day:  {{data.current.is_day}}  </li>
+        <li class="item">CONDITION :
+            <div>{{data.current.condition.text}}</div>
+            <img src ="{{data.current.condition.icon}}">
+            
+
+        </li>
+        <li class="item">Wind Speed-In miles:  {{data.current.wind_mph}}</li>
+        <li class="item">Wind Speed-In Kilometres: {{data.current.wind_kph}}</li>
+        <li class="item">Wind Degree: {{data.current.wind_degree}}</li>
+        <li class="item">Wind Direction : {{data.current.wind_dir}}</li>
+        <li class="item">Pressure in millibar :  {{data.current.pressure_mb}} </li>
+        <li class="item">Pressure in Inches:  {{data.current.pressure_in}}</li>
+        <li class="item">Precipitation in mm :  {{data.precip_mm}}</li>
+        <li class="item">Humidity :  {{data.current.humidity}}</li>
+        <li class="item">Cloud:  {{data.current.cloud}}</li>
+        <li class="item">Feels Like Celsius :  {{data.current.feelslike_c}}</li>
+        <li class="item">Feels like farheneit:  {{data.current.feelslike_f}}</li>
+        <li class="item">Visibility in Kilometres:  {{data.current.vis_km}}</li>
+        <li class="item">UV :  {{data.current.uv}}</li>
+        <li class="item">Gust in Miles Per Hour : {{data.current.gust_mph}}</li>
+        <li class="item">Air Quality : 
+            <div class="aqi">
+                <ul class="aqi">
+                    <li class="subitem">CO : {{data.current.air_quality.co}}</li>
+                    <li class="subitem">NO2 :  {{data.current.air_quality.no2}}</li>
+                    <li class="subitem">O3 :  {{data.current.air_quality.o3}}</li>
+                    <li class="subitem">SO2 :  {{data.current.air_quality.so2}}</li>
+                    <li class="subitem">PM 2.5 :  {{data.current.air_quality.pm2_5}}</li>
+                    <li class="subitem">PM 10 :  {{data.current.air_quality.pm10}}</li>
+                </ul>
+            </div>
+        </li>
+       
+    </ul>
+
+    </div>
+    
+    </body>
+
+    
+    
+
+</html>
